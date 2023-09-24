@@ -1,17 +1,17 @@
 import type { MetaFunction } from "@remix-run/node";
-import Blog from "~/views/Blog";
+import Talks from "~/views/Talks";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Blog" },
-    { name: "Blog Page", content: "Checkout some of these cool posts." },
+    { title: "Talks" },
+    { name: "Talks Page", content: "Checkout some of these cool talks." },
   ];
 };
 
-export default function BlogRoute() {
+export default function TalksRoute() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <Blog />
+      <Talks />
     </div>
   );
 }
