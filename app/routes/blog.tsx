@@ -1,17 +1,17 @@
 import type { MetaFunction } from "@remix-run/node";
-import Home from "~/views/Home";
+import Blog from "~/views/Blog";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Blog" },
+    { name: "Blog Page", content: "Checkout some of these cool posts." },
   ];
 };
 
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <Home />
+      <Blog />
     </div>
   );
 }
